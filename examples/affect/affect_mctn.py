@@ -53,3 +53,4 @@ all_in_one_train(trainprocess, allmodules)
 model = torch.load('best_mctn.pt').cuda()
 
 test(model, testdata, 'mosi', no_robust=True)
+# test(model, testdata, 'mosi', no_robust=True, criterion=torch.nn.L1Loss(), task='posneg-classification')
