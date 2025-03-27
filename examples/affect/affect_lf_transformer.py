@@ -18,10 +18,16 @@ traindata, validdata, test_robust = \
     get_dataloader('/content/MultiBench/data/mosi_raw.pkl', robust_test=False)
 
 # mosi/mosei
-encoders = [Transformer(20, 40).cuda(),
-            Transformer(5, 10).cuda(),
-            Transformer(300, 600).cuda()]
-head = MLP(650, 256, 1).cuda()
+encoders = [
+    Transformer(35, 40).cuda(),  # Visual
+    Transformer(74, 80).cuda(),  # Audio
+    Transformer(300, 600).cuda() # Text
+]
+head = MLP(720, 256, 1).cuda()  # 40 + 80 + 600
+# encoders = [Transformer(20, 40).cuda(),
+#             Transformer(5, 10).cuda(),
+#             Transformer(300, 600).cuda()]
+# head = MLP(650, 256, 1).cuda()
 
 # humor/sarcasm
 # encoders=[Transformer(371,400).cuda(), \
