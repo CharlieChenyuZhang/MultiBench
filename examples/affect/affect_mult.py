@@ -33,7 +33,7 @@ class HParams():
         all_steps = False
 
 encoders = [Identity().cuda(), Identity().cuda(), Identity().cuda()]
-fusion = MULTModel(3, [20, 5, 300], hyp_params=HParams).cuda()
+fusion = MULTModel(3, [35, 5, 300], hyp_params=HParams).cuda()
 # fusion = MULTModel(3, [371, 81, 300], hyp_params=HParams).cuda()
 head = Identity().cuda()
 
