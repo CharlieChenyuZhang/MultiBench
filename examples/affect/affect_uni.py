@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.append(os.getcwd())
 sys.path.append(os.path.dirname(os.path.dirname(os.getcwd())))
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+# os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
 from unimodals.common_models import GRU, MLP, Sequential, Identity  # noqa
 from training_structures.unimodal import train, test  # noqa
