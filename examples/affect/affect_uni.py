@@ -12,9 +12,9 @@ from fusions.common_fusions import ConcatEarly  # noqa
 
 # mosi_data.pkl, mosei_senti_data.pkl
 # mosi_raw.pkl, mosei_raw.pkl, sarcasm.pkl, humor.pkl
-# traindata, validdata, testdata = get_dataloader('/home/pliang/multibench/affect/pack/mosi/mosi_raw.pkl', robust_test=False)
+# traindata, validdata, testdata = get_dataloader('/content/MultiBench/data/mosi_raw.pkl', robust_test=False)
 traindata, validdata, testdata = get_dataloader(
-    '/home/pliang/multibench/affect/pack/mosi/mosi_raw.pkl', robust_test=False, max_pad=True, data_type='mosi', max_seq_len=50)
+    '/content/MultiBench/data/mosi_raw.pkl', robust_test=False, max_pad=True, data_type='mosi', max_seq_len=50)
 
 modality_num = 2
 

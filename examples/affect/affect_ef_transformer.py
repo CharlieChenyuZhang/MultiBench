@@ -16,7 +16,7 @@ from fusions.common_fusions import ConcatEarly # noqa
 # mosi_raw.pkl, mosei_senti_data.pkl, sarcasm.pkl, humor.pkl
 # raw_path: mosi.hdf5, mosei.hdf5, sarcasm_raw_text.pkl, humor_raw_text.pkl
 traindata, validdata, testdata = get_dataloader(
-    '/home/paul/MultiBench/mosei_senti_data.pkl', robust_test=False)
+    '/content/MultiBench/data/mosi_raw.pkl', robust_test=False)
 
 # mosi/mosei
 encoders = [Identity().cuda(), Identity().cuda(), Identity().cuda()]
