@@ -16,7 +16,7 @@ from fusions.common_fusions import Concat, TensorFusion  # noqa
 # mosi_raw.pkl, mosei_raw.pkl, sarcasm.pkl, humor.pkl
 # raw_path: mosi.hdf5, mosei.hdf5, sarcasm_raw_text.pkl, humor_raw_text.pkl
 traindata, validdata, test_robust = get_dataloader(
-    '/home/paul/MultiBench/mosi_raw.pkl', robust_test=False)
+    '/content/MultiBench/data/mosi_raw.pkl', robust_test=False)
 
 # mosi/mosei
 encoders = [GRUWithLinear(35, 64, 4, dropout=True, has_padding=True).cuda(),
